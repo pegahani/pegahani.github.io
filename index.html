@@ -1,108 +1,188 @@
-<nav>
-  <a href="#about">About</a>
-  <a href="#research">Research</a>
-  <a href="#publications">Publications</a>
-  <a href="#teaching">Teaching</a>
-  <a href="#opportunities" class="nav-highlight">Open Positions</a>
-</nav>
-
- <head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
- </head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pegah Alizadeh</title>
+  <meta name="description" content="Pegah Alizadeh, Junior Professor at Université Lumière Lyon 2 (ERIC laboratory): reinforcement learning, decision-making, optimization and large language models.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <div class="logos-section">
-    <img src="eric-lab.png" alt="ERIC Laboratory logo" class="logo">
-    <img src="lyon2-logo.png" alt="University of Lyon2 logo" class="logo">
-  </div>
+  <nav>
+    <a href="#news">News</a>
+    <a href="#bio">Bio</a>
+    <a href="#research">Research</a>
+    <a href="#students">Students</a>
+    <a href="projects.html">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#service">Service</a>
+    <a href="#opportunities">Open positions</a>
+  </nav>
 
-  <section id="about" class="about-with-photo">
-    <div class="about-content">
-      <h1>About Me</h1>
-      <p>I am a member of <a href="https://eric.univ-lyon2.fr/weberic/" target="_blank">ERIC laboratory</a>, <a href="https://eric.univ-lyon2.fr/weberic/?page_id=219" target="_blank"> Data Mining and Decision (DMD)</a> team.</p>
-      
-      <div class="contact-info">
-        <h3>Contact Information</h3>
-        <p><strong>Address:</strong> 5 avenue Pierre Mendès France, 69676 Bron, Cedex, France</p>
-        <p><strong>Email:</strong> <a href="mailto:pegah.alizadeh@univ-lyon2.fr">pegah.alizadeh@univ-lyon2.fr</a></p>
-        
-        <h3 style="margin-top: 15px;">Professional Profiles</h3>
-        <div class="social-links">
-          <a href="https://github.com/pegahani" target="_blank" class="social-link">GitHub</a>
-          <a href="https://scholar.google.com/citations?user=bOkBbb8AAAAJ&hl=fr" target="_blank" class="social-link">Google Scholar</a>
-          <a href="https://dblp.org/pid/159/4549.html" target="_blank" class="social-link">DBLP</a>
-        </div>
-      </div>
+  <header id="about">
+    <img src="photo-portrait.jpg" alt="Photo of Pegah Alizadeh">
+    <div>
+      <h1>Pegah Alizadeh</h1>
+      <p>Junior Professor (Chaire de professeur junior)</p>
+      <p><a href="https://eric.univ-lyon2.fr/weberic/" target="_blank">ERIC laboratory</a>,
+         <a href="https://eric.univ-lyon2.fr/weberic/?page_id=219" target="_blank">Data Mining and Decision (DMD)</a> team</p>
+      <p>Université Lumière Lyon 2</p>
+      <p class="muted">5 avenue Pierre Mendès France, 69676 Bron Cedex, France</p>
+      <p><a href="mailto:pegah.alizadeh@univ-lyon2.fr">pegah.alizadeh@univ-lyon2.fr</a></p>
+      <p class="links">
+        <a href="https://scholar.google.com/citations?user=bOkBbb8AAAAJ&hl=fr" target="_blank">Google Scholar</a>
+        <a href="https://dblp.org/pid/159/4549.html" target="_blank">DBLP</a>
+        <a href="https://orcid.org/0000-0002-7231-5840" target="_blank">ORCID</a>
+        <a href="https://hal.science/search/index/?q=authFullName_s%3A%22Pegah+Alizadeh%22" target="_blank">HAL</a>
+        <a href="https://github.com/pegahani" target="_blank">GitHub</a>
+      </p>
     </div>
-    <img src="photo.jpg" alt="Profile photo" class="profile-photo">
+  </header>
+
+  <section id="news">
+    <h2>News</h2>
+    <!-- Keep 3 to 5 items, newest first; remove old ones -->
+    <ul class="news">
+      <li><span class="muted">Oct 2026</span><span>New course: <a href="reinforcement-learning.html">Principles of Reinforcement Learning</a>.</span></li>
+      <li><span class="muted">2026</span><span>Papers accepted at <em>PAKDD 2026</em> (meta-RL for energy systems) and <em>IEEE NOMS 2026</em> (offline RL for network control).</span></li>
+      <li><span class="muted">Jan 2026</span><span>Théo Zangato defended his PhD, <a href="https://theses.fr/s436061" target="_blank"><em>Améliorer la généralisation et la capacité de prévision en apprentissage par renforcement</em></a>. Congratulations!</span></li>
+      <li><span class="muted">Dec 2025</span><span>I joined Université Lumière Lyon 2 and the ERIC laboratory as a Junior Professor (CPJ).</span></li>
+    </ul>
+  </section>
+
+  <section id="bio">
+    <h2>Bio</h2>
+    <p>I am a Junior Professor (chaire de professeur junior) at Université Lumière Lyon 2, in the Data Mining and Decision team of the ERIC laboratory.
+       My chair, funded by the French National Research Agency (ANR), studies how to make the alignment of large language models
+       <a href="projects.html#cpj">robust, pluralistic and efficient</a>, with applications to digital humanities.</p>
+    <p>I received my PhD in computer science from Université Sorbonne Paris Nord (formerly Université Paris 13) in 2016, with a thesis on
+       <a href="https://theses.fr/2016USPCD011" target="_blank"><em>Elicitation and planning in Markov decision processes with unknown rewards</em></a>.
+       I was then a teaching and research fellow (ATER) at Université Paris Dauphine, and a postdoctoral researcher in the CODAG team of the GREYC laboratory (Université de Caen Normandie) from 2017 to 2018.
+       In 2018, I joined the De Vinci Research Center (Pôle Léonard de Vinci, Paris La Défense), first as a postdoctoral researcher (2018–2019),
+       then as an assistant professor (2019–2022). From 2022 to 2025, I was a Master Researcher at Ericsson, before joining Lyon 2 in December 2025.</p>
   </section>
 
   <section id="research">
-    <h1>Research</h1>
-    <p>My research interests include decision-making, reinforcement learning, and optimization, with a particular focus on robustness and uncertainty quantification and their applications to large language models and networked systems.</p> 
-    <p style="display: block; visibility: visible; opacity: 1;">I am interested in the alignment and calibration of large language models through pre-training, supervised fine-tuning, and reinforcement learning. I am also interested in studying language models from the perspective of constraints, coordination, and interactions between their different components and agents.</p> 
+    <h2>Research</h2>
+    <p>My research interests include decision-making, reinforcement learning, and optimization, with a particular focus on robustness and uncertainty quantification and their applications to large language models and networked systems.</p>
+    <p>I am interested in the alignment and calibration of large language models through pre-training, supervised fine-tuning, and reinforcement learning. I am also interested in studying language models from the perspective of constraints, coordination, and interactions between their different components and agents.</p>
   </section>
 
-  <section id="opportunities" class="opportunities-section">
-    <h1>Potential Opportunities</h1>
-    <div class="opportunity-card">
-      <p>Are you a <strong>Master's or Bachelor's student</strong> interested in machine learning, natural language processing, or reinforcement learning? We have sometimes research opportunities available.</p>
-      <p>If you are passionate about advancing AI and would like to work on cutting-edge projects, I would love to hear from you. Please feel free to <a href="mailto:pegah.alizadeh@univ-lyon2.fr?subject=Research%20Opportunity">contact me</a> to discuss potential collaboration opportunities.</p>
-    </div>
+  <section id="students">
+    <h2>Recent students</h2>
+
+    <h3>PhD students</h3>
+    <table class="people">
+      <tr><th>Name</th><th>Years</th><th>Thesis</th><th>Co-supervision</th></tr>
+      <tr><td>Théo Zangato</td><td>2021–2026</td><td><a href="https://theses.fr/s436061" target="_blank"><em>Améliorer la généralisation et la capacité de prévision en apprentissage par renforcement</em></a></td><td>Aomar Osmani</td></tr>
+      <tr><td>Louis Zigrand</td><td>2020–2023</td><td><a href="https://theses.fr/2023PA131042" target="_blank"><em>Learnheuristics for dynamic demand-responsive transport systems</em></a></td><td>Roberto Wolfler Calvo, Emiliano Traversi</td></tr>
+    </table>
+
+    <h3>Master's students</h3>
+    <table class="people">
+      <tr><th>Name</th><th>Year</th><th>Topic</th><th>Collaborators</th></tr>
+      <tr><td>Emma Carpanin</td><td>2026</td><td></td><td></td></tr>
+      <tr><td>Mahdi Salmani Zarchi</td><td>2026</td><td></td><td></td></tr>
+      <tr><td>Nicolas Helson</td><td>2025</td><td>Offline reinforcement learning for network control</td><td></td></tr>
+      <tr><td>Vasileios Koutsoukis</td><td>2025</td><td>Offline reinforcement learning for mobility robustness optimization</td><td>Pradeepa Ramachandra, Osama Arouk</td></tr>
+      <tr><td>Charly Alizadeh</td><td>2022</td><td>Learning clique decompositions for semidefinite relaxations of optimal power flow</td><td>Miguel F. Anjos, Lucas Létocart, Emiliano Traversi</td></tr>
+      <tr><td>Christophe Haikal</td><td>2022</td><td>Place embeddings across cities in location-based social networks</td><td>Christophe Rodrigues, Chongke Bi</td></tr>
+      <tr><td>Sammy Taleb</td><td>2022</td><td>Imitation learning from multiple experts; reinforcement learning for expert finding</td><td>Aomar Osmani, Jorge García Flores, Iván Meza</td></tr>
+    </table>
+
+    <h3>Bachelor's students</h3>
+    <table class="people compact">
+      <tr><th>Name</th><th>Year</th></tr>
+      <tr><td>Amir MalekHosseini</td><td>2026</td></tr>
+      <tr><td>Mohammad Amanlou</td><td>2026</td></tr>
+      <tr><td>Yasaman Amou Jafari</td><td>2026</td></tr>
+    </table>
   </section>
 
-  <section id="selected publications">
-    <h1>Selected Publications</h1>
-    
-    <h3 style="margin-top: 25px; color: #5568d3; border-bottom: 2px solid #5568d3; padding-bottom: 8px;">2026</h3>
-    <ul>
-      <li><strong>Nicolas Helson, Pegah Alizadeh, Anastasios Giovanidis:</strong> Selecting Offline Reinforcement Learning Algorithms for Stochastic Network Control. <em>IEEE NOMS 2026</em>. <a href="https://doi.org/10.48550/arXiv.2603.03932" target="_blank">[arXiv]</a></li>
-      <li><strong>Théo Zangato, Aomar Osmani, Pegah Alizadeh:</strong> Meta-RL with Shared Representations Enables Fast Adaptation in Energy Systems. <em>PAKDD 2026</em>. <a href="https://doi.org/10.48550/arXiv.2603.08418" target="_blank">[arXiv]</a></li>
+  <section id="publications">
+    <h2>Selected publications</h2>
+
+    <p class="year">2026</p>
+    <ul class="pubs">
+      <li>Nicolas Helson, <strong>Pegah Alizadeh</strong>, Anastasios Giovanidis. Selecting Offline Reinforcement Learning Algorithms for Stochastic Network Control. <em>IEEE NOMS 2026</em>. <a href="https://doi.org/10.48550/arXiv.2603.03932" target="_blank">[arXiv]</a></li>
+      <li>Théo Zangato, Aomar Osmani, <strong>Pegah Alizadeh</strong>. Meta-RL with Shared Representations Enables Fast Adaptation in Energy Systems. <em>PAKDD 2026</em>. <a href="https://doi.org/10.48550/arXiv.2603.08418" target="_blank">[arXiv]</a></li>
     </ul>
 
-    <h3 style="margin-top: 25px; color: #5568d3; border-bottom: 2px solid #5568d3; padding-bottom: 8px;">2024</h3>
-    <ul>
-      <li><strong>Athanasios Karapantelakis, Pegah Alizadeh, Abdulrahman Alabassi, Kaushik Dey, Alexandros Nikou:</strong> Generative AI in mobile networks: a survey. <em>Annals of Telecommunications</em>, 79(1-2): 15-33. <a href="https://doi.org/10.1007/s12243-023-00980-9" target="_blank">[DOI]</a></li>
-      <li><strong>Théo Zangato, Aomar Osmani, Pegah Alizadeh:</strong> Enhancing Decision-Making in Energy Management Systems Through Action-Independent Dynamics Learning. <em>ECAI 2024</em>. <a href="https://doi.org/10.3233/FAIA241050" target="_blank">[DOI]</a></li>
+    <p class="year">2025</p>
+    <ul class="pubs">
+      <li><strong>Pegah Alizadeh</strong>, Anastasios Giovanidis, Pradeepa Ramachandra, Vasileios Koutsoukis, Osama Arouk. Offline Reinforcement Learning for Mobility Robustness Optimization. <em>arXiv preprint</em>, 2025. <a href="https://doi.org/10.48550/arXiv.2506.22793" target="_blank">[arXiv]</a></li>
     </ul>
 
-    <h3 style="margin-top: 25px; color: #5568d3; border-bottom: 2px solid #5568d3; padding-bottom: 8px;">2023</h3>
-    <ul>
-      <li><strong>Louis Zigrand, Roberto Wolfler Calvo, Emiliano Traversi, Pegah Alizadeh:</strong> Optimization-driven Demand Prediction Framework for Suburban Dynamic Demand-Responsive Transport Systems. <em>IJCAI 2023</em>. <a href="https://doi.org/10.24963/ijcai.2023/703" target="_blank">[DOI]</a></li>
+    <p class="year">2024</p>
+    <ul class="pubs">
+      <li>Athanasios Karapantelakis, <strong>Pegah Alizadeh</strong>, Abdulrahman Alabassi, Kaushik Dey, Alexandros Nikou. Generative AI in mobile networks: a survey. <em>Annals of Telecommunications</em>, 79(1-2): 15-33. <a href="https://doi.org/10.1007/s12243-023-00980-9" target="_blank">[DOI]</a></li>
+      <li>Théo Zangato, Aomar Osmani, <strong>Pegah Alizadeh</strong>. Enhancing Decision-Making in Energy Management Systems Through Action-Independent Dynamics Learning. <em>ECAI 2024</em>. <a href="https://doi.org/10.3233/FAIA241050" target="_blank">[DOI]</a></li>
     </ul>
 
-    <h3 style="margin-top: 25px; color: #5568d3; border-bottom: 2px solid #5568d3; padding-bottom: 8px;">2022</h3>
-    <ul>
-      <li><strong>Aomar Osmani, Massinissa Hamidi, Pegah Alizadeh:</strong> Clustering Approach to Solve Hierarchical Classification Problem Complexity. <em>AAAI 2022</em>. <a href="https://doi.org/10.1609/aaai.v36i7.20760" target="_blank">[DOI]</a></li>
-      <li><strong>Pegah Alizadeh, Aomar Osmani, Sammy Taleb:</strong> Improving Imitation Learning by Merging Experts Trajectories. <em>CIKM 2022</em>. <a href="https://doi.org/10.1145/3511808.3557616" target="_blank">[DOI]</a></li>
-      <li><strong>Charly Alizadeh, Pegah Alizadeh, Miguel F. Anjos, Lucas Létocart, Emiliano Traversi:</strong> How to Learn the Optimal Clique Decompositions in Solving Semidefinite Relaxations for OPF. <em>IJCNN 2022</em>. <a href="https://doi.org/10.1109/IJCNN55064.2022.9891912" target="_blank">[DOI]</a></li>
+    <p class="year">2023</p>
+    <ul class="pubs">
+      <li>Louis Zigrand, Roberto Wolfler Calvo, Emiliano Traversi, <strong>Pegah Alizadeh</strong>. Optimization-driven Demand Prediction Framework for Suburban Dynamic Demand-Responsive Transport Systems. <em>IJCAI 2023</em>. <a href="https://doi.org/10.24963/ijcai.2023/703" target="_blank">[DOI]</a></li>
     </ul>
 
-    <h3 style="margin-top: 25px; color: #5568d3; border-bottom: 2px solid #5568d3; padding-bottom: 8px;">2021</h3>
-    <ul>
-      <li><strong>Pegah Alizadeh, Emiliano Traversi, Aomar Osmani:</strong> Deterministic policies based on maximum regrets in MDPs with imprecise rewards. <em>AI Communications</em>, 34(4): 229-244. <a href="https://doi.org/10.3233/AIC-190632" target="_blank">[DOI]</a></li>
-      <li><strong>Louis Zigrand, Pegah Alizadeh, Emiliano Traversi, Roberto Wolfler Calvo:</strong> Machine Learning Guided Optimization for Demand Responsive Transport Systems. <em>ECML/PKDD 2021</em>. <a href="https://doi.org/10.1007/978-3-030-86514-6_26" target="_blank">[DOI]</a></li>
+    <p class="year">2022</p>
+    <ul class="pubs">
+      <li>Aomar Osmani, Massinissa Hamidi, <strong>Pegah Alizadeh</strong>. Clustering Approach to Solve Hierarchical Classification Problem Complexity. <em>AAAI 2022</em>. <a href="https://doi.org/10.1609/aaai.v36i7.20760" target="_blank">[DOI]</a></li>
+      <li><strong>Pegah Alizadeh</strong>, Aomar Osmani, Sammy Taleb. Improving Imitation Learning by Merging Experts Trajectories. <em>CIKM 2022</em>. <a href="https://doi.org/10.1145/3511808.3557616" target="_blank">[DOI]</a></li>
+      <li>Charly Alizadeh, <strong>Pegah Alizadeh</strong>, Miguel F. Anjos, Lucas Létocart, Emiliano Traversi. How to Learn the Optimal Clique Decompositions in Solving Semidefinite Relaxations for OPF. <em>IJCNN 2022</em>. <a href="https://doi.org/10.1109/IJCNN55064.2022.9891912" target="_blank">[DOI]</a></li>
     </ul>
+
+    <p class="year">2021</p>
+    <ul class="pubs">
+      <li><strong>Pegah Alizadeh</strong>, Emiliano Traversi, Aomar Osmani. Deterministic policies based on maximum regrets in MDPs with imprecise rewards. <em>AI Communications</em>, 34(4): 229-244. <a href="https://doi.org/10.3233/AIC-190632" target="_blank">[DOI]</a></li>
+      <li>Louis Zigrand, <strong>Pegah Alizadeh</strong>, Emiliano Traversi, Roberto Wolfler Calvo. Machine Learning Guided Optimization for Demand Responsive Transport Systems. <em>ECML/PKDD 2021</em>. <a href="https://doi.org/10.1007/978-3-030-86514-6_26" target="_blank">[DOI]</a></li>
+    </ul>
+    <p>Full list on <a href="https://scholar.google.com/citations?user=bOkBbb8AAAAJ&hl=fr" target="_blank">Google Scholar</a> and <a href="https://dblp.org/pid/159/4549.html" target="_blank">DBLP</a>.</p>
   </section>
 
   <section id="teaching">
-    <h1>Teaching</h1>
-    <p>I have experience teaching courses on machine learning and artificial intelligence at the undergraduate and graduate levels. Below is the list of my ongoing courses.</p>
-    
-    <div class="courses">
-      <div class="course">
-        <h3><a href="machine-learning-textual-data.html" style="color: #5568d3; text-decoration: none; cursor: pointer;">Machine Learning for Textual Data</a></h3>
-      </div>
-      <div class="course">
-        <h3><a href="reinforcement-learning.html" style="color: #5568d3; text-decoration: none; cursor: pointer;">Reinforcement Learning</a></h3>
-      </div>
-    </div>
+    <h2>Teaching</h2>
+    <p>I teach machine learning and artificial intelligence at the undergraduate and graduate levels. Current courses:</p>
+    <ul>
+      <li><a href="reinforcement-learning.html">Principles of Reinforcement Learning</a> (atelier thématique)</li>
+      <li><a href="machine-learning-textual-data.html">Machine Learning for Textual Data</a></li>
+    </ul>
   </section>
 
-  <section id="hobbies" class="hobbies-section">
-    <h1>Personal Hobbies</h1>
+  <section id="service">
+    <h2>Service</h2>
+    <h3>Reviewing</h3>
+    <ul>
+      <li>Conferences: ICLR 2027, AAAI 2027, ECIR</li>
+      <li>Sub-reviewer: IJCAI-ECAI 2018</li>
+    </ul>
+    <h3>Program committees</h3>
+    <ul>
+      <li>JFPDA (Journées Francophones sur la Planification, la Décision et l'Apprentissage): 2020 (Angers) and 2022 (Saint-Étienne)</li>
+      <li>ECML PKDD 2021</li>
+      <li>TALN 2018, Rencontres Jeunes Chercheurs (RJC)</li>
+    </ul>
+    <!-- Template for more items: PhD juries, responsibilities at Lyon 2 / ERIC, project evaluation (ANR, ...)
+    <h3>PhD juries</h3>
+    <ul><li>First Last, University, year (examiner)</li></ul>
+    -->
+  </section>
+
+  <section id="opportunities">
+    <h2>Open positions</h2>
+    <p>Are you a Master's or Bachelor's student interested in machine learning, natural language processing, or reinforcement learning? Research internships are sometimes available. Please <a href="mailto:pegah.alizadeh@univ-lyon2.fr?subject=Research%20opportunity">contact me</a> with your CV and a few lines on what interests you.</p>
+  </section>
+
+  <section id="personal">
+    <h2>Personal</h2>
     <p>In my free time, I draw and paint. I read about philosophy and enjoy running and swimming when I can. I also care about environmental and ethical issues.</p>
   </section>
+
+  <footer>
+    <img src="lyon2-logo-trim.png" alt="Université Lumière Lyon 2">
+    <img src="eric-lab-trim.png" alt="ERIC laboratory">
+    <span>Last updated: October 2026</span>
+  </footer>
 </body>
+</html>

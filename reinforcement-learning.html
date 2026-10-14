@@ -1,81 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Reinforcement Learning</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Principles of Reinforcement Learning</title>
+  <meta name="description" content="Principles of Reinforcement Learning: course by Pegah Alizadeh at Université Lumière Lyon 2.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav>
-    <a href="index.html#about">About</a>
-    <a href="index.html#research">Research</a>
-    <a href="index.html#publications">Publications</a>
+    <a href="index.html">Pegah Alizadeh</a>
     <a href="index.html#teaching">Teaching</a>
-    <a href="index.html#opportunities" class="nav-highlight">Open Positions</a>
   </nav>
 
-  <section style="margin: 20px; padding: 30px; background: white; border-radius: 15px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);">
-    <a href="index.html#teaching" style="color: #5568d3; text-decoration: none; font-weight: 500;">← Back to Teaching</a>
-    
-    <h1 style="font-size: 28px; margin-bottom: 20px; color: #5568d3; border-bottom: 3px solid #5568d3; padding-bottom: 10px;">Reinforcement Learning</h1>
-    
-    <div style="margin-top: 30px;">
-      <h2 style="color: #5568d3; margin-top: 25px; margin-bottom: 15px;">Course Overview</h2>
-      <p style="font-size: 15px; color: #555; line-height: 1.6;">This course introduces the fundamentals of reinforcement learning, a machine learning paradigm where an agent learns to make optimal decisions by interacting with an environment. Through theory and hands-on projects, students will understand key concepts and implement RL algorithms for real-world applications.</p>
-      
-      <h2 style="color: #5568d3; margin-top: 25px; margin-bottom: 15px;">Learning Objectives</h2>
-      <ul style="font-size: 15px; color: #555; line-height: 1.8;">
-        <li style="margin: 10px 0; padding-left: 25px; position: relative;">
-          <span style="position: absolute; left: 0; color: #6b5b95; font-weight: bold;">▸</span>
-          Understand the fundamentals of Markov Decision Processes (MDPs)
-        </li>
-        <li style="margin: 10px 0; padding-left: 25px; position: relative;">
-          <span style="position: absolute; left: 0; color: #6b5b95; font-weight: bold;">▸</span>
-          Implement and compare value-based and policy-based algorithms
-        </li>
-        <li style="margin: 10px 0; padding-left: 25px; position: relative;">
-          <span style="position: absolute; left: 0; color: #6b5b95; font-weight: bold;">▸</span>
-          Apply RL techniques to optimization and control problems
-        </li>
-        <li style="margin: 10px 0; padding-left: 25px; position: relative;">
-          <span style="position: absolute; left: 0; color: #6b5b95; font-weight: bold;">▸</span>
-          Analyze robustness and safety in RL systems
-        </li>
-      </ul>
-      
-      <h2 style="color: #5568d3; margin-top: 25px; margin-bottom: 15px;">Topics Covered</h2>
-      <ul style="font-size: 15px; color: #555; line-height: 1.8;">
-        <li style="margin: 10px 0; padding-left: 25px; position: relative;">
-          <span style="position: absolute; left: 0; color: #6b5b95; font-weight: bold;">▸</span>
-          Markov Decision Processes and dynamic programming
-        </li>
-        <li style="margin: 10px 0; padding-left: 25px; position: relative;">
-          <span style="position: absolute; left: 0; color: #6b5b95; font-weight: bold;">▸</span>
-          Temporal difference learning and Q-learning
-        </li>
-        <li style="margin: 10px 0; padding-left: 25px; position: relative;">
-          <span style="position: absolute; left: 0; color: #6b5b95; font-weight: bold;">▸</span>
-          Policy gradient methods and actor-critic algorithms
-        </li>
-        <li style="margin: 10px 0; padding-left: 25px; position: relative;">
-          <span style="position: absolute; left: 0; color: #6b5b95; font-weight: bold;">▸</span>
-          Deep reinforcement learning and neural networks
-        </li>
-        <li style="margin: 10px 0; padding-left: 25px; position: relative;">
-          <span style="position: absolute; left: 0; color: #6b5b95; font-weight: bold;">▸</span>
-          Multi-agent and offline reinforcement learning
-        </li>
-        <li style="margin: 10px 0; padding-left: 25px; position: relative;">
-          <span style="position: absolute; left: 0; color: #6b5b95; font-weight: bold;">▸</span>
-          Applications to optimization and control systems
-        </li>
-      </ul>
-      
-      <h2 style="color: #5568d3; margin-top: 25px; margin-bottom: 15px;">Contact</h2>
-      <p style="font-size: 15px; color: #555;">For questions about this course, please contact: <a href="mailto:pegah.alizadeh@univ-lyon2.fr" style="color: #5568d3; text-decoration: none; font-weight: 500;">pegah.alizadeh@univ-lyon2.fr</a></p>
-    </div>
-  </section>
+  <h1>Principles of Reinforcement Learning</h1>
+  <p class="muted">Atelier thématique · Université Lumière Lyon 2 · 2026</p>
 
+  <p><strong>Course material:</strong>
+    <a href="https://github.com/pegahani/Atelier-thematique-Principles-of-Reinforcement-Learning" target="_blank">github.com/pegahani/Atelier-thematique-Principles-of-Reinforcement-Learning</a></p>
+
+  <h2>Overview</h2>
+  <p>Reinforcement learning studies how an agent learns to make good decisions by interacting with an environment. In this atelier you learn it by building agents: short theory blocks, then coding in pairs, from planning on a small grid world to deep RL agents that land a spacecraft. There is no exam.</p>
+  <p><strong>Format:</strong> 4 sessions, one of 2h and three of 4h. Sessions 3 and 4 end with a LunarLander leaderboard.</p>
+
+  <h2>Sessions</h2>
+  <table>
+    <tr><th>#</th><th>Topic</th><th>Hands-on</th></tr>
+    <tr><td>1</td><td>Markov decision processes, Bellman equations, dynamic programming</td><td>Value iteration on FrozenLake</td></tr>
+    <tr><td>2</td><td>Learning without a model: Monte Carlo, TD learning, SARSA, Q-learning</td><td>Tabular agents</td></tr>
+    <tr><td>3</td><td>Deep reinforcement learning</td><td>DQN from scratch</td></tr>
+    <tr><td>4</td><td>Policy gradient methods, PPO, reinforcement learning for language models</td><td>PPO on LunarLander</td></tr>
+  </table>
+
+  <h2>Learning objectives</h2>
+  <ul>
+    <li>Model a decision problem as a Markov decision process and solve it by dynamic programming</li>
+    <li>Implement and compare value-based and policy-based algorithms</li>
+    <li>Implement DQN and PPO and make them train reliably</li>
+    <li>Understand how reinforcement learning is used to train large language models (RLHF, GRPO)</li>
+  </ul>
+
+  <h2>Prerequisites</h2>
+  <p>Python and NumPy, basic probability and linear algebra. Some familiarity with PyTorch helps but is not required. Setup instructions are in the course repository.</p>
+
+  <h2>References</h2>
+  <ul>
+    <li>R. S. Sutton and A. G. Barto, <em>Reinforcement Learning: An Introduction</em>, 2nd ed., 2018. <a href="http://incompleteideas.net/book/the-book-2nd.html" target="_blank">Free online</a></li>
+    <li>D. Silver, <a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ" target="_blank">UCL course on reinforcement learning</a> (videos)</li>
+    <li><a href="https://huggingface.co/learn/deep-rl-course" target="_blank">Hugging Face Deep RL course</a></li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Questions about the course: <a href="mailto:pegah.alizadeh@univ-lyon2.fr">pegah.alizadeh@univ-lyon2.fr</a>. Reinforcement learning is also my research area: students interested in an internship are welcome to <a href="index.html#opportunities">get in touch</a>.</p>
+
+  <footer>
+    <img src="lyon2-logo-trim.png" alt="Université Lumière Lyon 2">
+    <img src="eric-lab-trim.png" alt="ERIC laboratory">
+    <span>Last updated: October 2026</span>
+  </footer>
 </body>
 </html>

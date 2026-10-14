@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects · Pegah Alizadeh</title>
+  <meta name="description" content="Research projects, papers and code of Pegah Alizadeh (Université Lumière Lyon 2, ERIC laboratory).">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Pegah Alizadeh</a>
+    <a href="index.html#research">Research</a>
+    <a href="index.html#students">Students</a>
+    <a href="index.html#publications">Publications</a>
+    <a href="index.html#teaching">Teaching</a>
+  </nav>
+
+  <h1>Projects</h1>
+  <p class="muted">Research projects, with their people, papers, and code.</p>
+
+  <!--
+  Template for a new project (copy, paste, fill in):
+
+  <section class="project" id="short-id">
+    <h2>Project title</h2>
+    <p class="muted">Years · Partners or funding</p>
+    <p>Two or three sentences: the question, the approach, the main result.</p>
+    <p><strong>People:</strong> ...</p>
+    <p><strong>Papers:</strong> ...</p>
+    <p><strong>Code:</strong> <a href="https://github.com/...">repository</a></p>
+  </section>
+  -->
+
+  <section class="project" id="cpj">
+    <h2>Robust, pluralistic and efficient alignment of large language models, with applications to digital humanities</h2>
+    <p class="muted">2025 – · Chaire de professeur junior, Université Lumière Lyon 2, funded by the French National Research Agency (ANR)</p>
+    <p>Large language models are aligned with human preferences through reinforcement learning and preference optimization (RLHF, DPO). My chair studies the decision-making foundations of this step, and its use in the humanities, along four lines:</p>
+    <ul>
+      <li><strong>Robustness:</strong> keeping preference optimization reliable when feedback is noisy or corrupted, and when deployment data differs from training data.</li>
+      <li><strong>Pluralistic alignment:</strong> aligning models with several legitimate, possibly conflicting, preference distributions instead of a single consensus, and letting personalized models learn from each other.</li>
+      <li><strong>Efficiency:</strong> reducing the computational and sample cost of reinforcement learning post-training, so that it can run on modest hardware.</li>
+      <li><strong>Digital humanities:</strong> using language models as research tools in the humanities and social sciences, where interpretations are plural and sources are noisy, which makes robust and pluralistic alignment essential.</li>
+    </ul>
+    <p><strong>Code:</strong> <a href="https://github.com/alignment-decision-lab/shiftlab-llm" target="_blank">SHIFT-Lab</a>, a framework for studying distribution shifts and lightweight corrections in LLM-based decision pipelines</p>
+    <p><strong>People:</strong> Emma Carpanin (Master's student, 2026); Mohammad Amanlou, Yasaman Amou Jafari, Amir MalekHosseini (Bachelor's students, 2026)</p>
+  </section>
+
+
+  <section class="project" id="energy-rl">
+    <h2>Reinforcement learning for energy management systems</h2>
+    <p class="muted">2021 – 2026</p>
+    <p>Learning control policies for energy systems that anticipate future conditions and adapt quickly to new environments, using temporal modeling and meta-reinforcement learning.</p>
+    <p><strong>People:</strong> Théo Zangato (PhD), Aomar Osmani</p>
+    <p><strong>Papers:</strong>
+      Meta-RL with Shared Representations Enables Fast Adaptation in Energy Systems, <em>PAKDD 2026</em> <a href="https://doi.org/10.48550/arXiv.2603.08418" target="_blank">[arXiv]</a>;
+      Enhancing Decision-Making in Energy Management Systems Through Action-Independent Dynamics Learning, <em>ECAI 2024</em> <a href="https://doi.org/10.3233/FAIA241050" target="_blank">[DOI]</a></p>
+    <p><strong>Thesis:</strong> <a href="https://theses.fr/s436061" target="_blank">Améliorer la généralisation et la capacité de prévision en apprentissage par renforcement</a></p>
+  </section>
+
+  <section class="project" id="network-control">
+    <h2>Offline reinforcement learning for network control</h2>
+    <p class="muted">2025 –</p>
+    <p>Learning to control mobile communication networks from logged data only: choosing which offline reinforcement learning algorithm to deploy, and applying offline RL to mobility robustness optimization (handover parameters).</p>
+    <p><strong>People:</strong> Nicolas Helson (Master's student), Vasileios Koutsoukis (Master's student)</p>
+    <p><strong>Papers:</strong>
+      Selecting Offline Reinforcement Learning Algorithms for Stochastic Network Control, <em>IEEE NOMS 2026</em> <a href="https://doi.org/10.48550/arXiv.2603.03932" target="_blank">[arXiv]</a>;
+      Offline Reinforcement Learning for Mobility Robustness Optimization, <em>arXiv</em> 2025 <a href="https://doi.org/10.48550/arXiv.2506.22793" target="_blank">[arXiv]</a></p>
+  </section>
+
+  <section class="project" id="drt">
+    <h2>Learning and optimization for demand-responsive transport</h2>
+    <p class="muted">2020 – 2023</p>
+    <p>Combining machine learning with operations research to plan dynamic demand-responsive transport in suburban areas: predicting demand and learning heuristics for routing decisions.</p>
+    <p><strong>People:</strong> Louis Zigrand (PhD), Roberto Wolfler Calvo, Emiliano Traversi</p>
+    <p><strong>Papers:</strong>
+      Optimization-driven Demand Prediction Framework for Suburban Dynamic Demand-Responsive Transport Systems, <em>IJCAI 2023</em> <a href="https://doi.org/10.24963/ijcai.2023/703" target="_blank">[DOI]</a>;
+      Machine Learning Guided Optimization for Demand Responsive Transport Systems, <em>ECML/PKDD 2021</em> <a href="https://doi.org/10.1007/978-3-030-86514-6_26" target="_blank">[DOI]</a></p>
+    <p><strong>Thesis:</strong> <a href="https://theses.fr/2023PA131042" target="_blank">Learnheuristics for dynamic demand-responsive transport systems</a></p>
+  </section>
+
+  <section class="project" id="imitation">
+    <h2>Imitation learning from multiple experts</h2>
+    <p class="muted">2022</p>
+    <p>Learning a policy from the trajectories of several experts of different quality, by merging their trajectories.</p>
+    <p><strong>People:</strong> Sammy Taleb (Master's student), Aomar Osmani</p>
+    <p><strong>Papers:</strong> Improving Imitation Learning by Merging Experts Trajectories, <em>CIKM 2022</em> <a href="https://doi.org/10.1145/3511808.3557616" target="_blank">[DOI]</a></p>
+  </section>
+
+  <section class="project" id="expert-finding">
+    <h2>Reinforcement learning for expert finding</h2>
+    <p class="muted">2024</p>
+    <p>Locating experts from web search results: an agent learns, with deep Q-learning, which search results to explore to find information about a person.</p>
+    <p><strong>People:</strong> Sammy Taleb (Master's student), Jorge García Flores, Iván Meza</p>
+    <p><strong>Papers:</strong> Reinforcement Learning for Expert Finding from Web Search Results, <em>Studies in Computational Intelligence</em>, 2024 <a href="https://doi.org/10.1007/978-3-031-40403-0_6" target="_blank">[DOI]</a></p>
+    <p><strong>Code:</strong> <a href="https://github.com/rcln/dospordos" target="_blank">dospordos</a></p>
+  </section>
+
+  <section class="project" id="opf">
+    <h2>Learning for semidefinite relaxations of optimal power flow</h2>
+    <p class="muted">2022</p>
+    <p>Using machine learning to choose clique decompositions that speed up semidefinite relaxations of the optimal power flow problem.</p>
+    <p><strong>People:</strong> Charly Alizadeh (Master's student), Miguel F. Anjos, Lucas Létocart, Emiliano Traversi</p>
+    <p><strong>Papers:</strong> How to Learn the Optimal Clique Decompositions in Solving Semidefinite Relaxations for OPF, <em>IJCNN 2022</em> <a href="https://doi.org/10.1109/IJCNN55064.2022.9891912" target="_blank">[DOI]</a></p>
+    <p><strong>Code:</strong>
+      <a href="https://github.com/charlyalizadeh/OPFSDP.jl" target="_blank">OPFSDP.jl</a>,
+      <a href="https://github.com/charlyalizadeh/SDPowerModelsDataset.jl" target="_blank">SDPowerModelsDataset.jl</a>,
+      <a href="https://github.com/charlyalizadeh/MergeDQN" target="_blank">MergeDQN</a></p>
+  </section>
+
+  <section class="project" id="place-embeddings">
+    <h2>Place embeddings across cities</h2>
+    <p class="muted">2022</p>
+    <p>Learning representations of places from location-based social networks that transfer from one city to another.</p>
+    <p><strong>People:</strong> Christophe Haikal (Master's student), Christophe Rodrigues, Chongke Bi</p>
+    <p><strong>Papers:</strong> Place embedding across cities in location-based social networks, <em>ACM SAC 2022</em> <a href="https://doi.org/10.1145/3477314.3506992" target="_blank">[DOI]</a></p>
+  </section>
+
+  <section class="project" id="regret-mdp">
+    <h2>Decision-making in Markov decision processes with imprecise rewards</h2>
+    <p class="muted">PhD (2016) and follow-up work</p>
+    <p>When the rewards of an MDP are only partially known, which policy should we choose, and which questions should we ask the user to learn the rewards that matter? This line of work, started in my PhD, computes policies that minimize the maximum regret and studies when deterministic policies are enough.</p>
+    <p><strong>Papers:</strong> Deterministic policies based on maximum regrets in MDPs with imprecise rewards, <em>AI Communications</em>, 2021 <a href="https://doi.org/10.3233/AIC-190632" target="_blank">[DOI]</a></p>
+    <p><strong>Thesis:</strong> <a href="https://theses.fr/2016USPCD011" target="_blank">Elicitation and planning in Markov decision processes with unknown rewards</a>, 2016</p>
+    <p><strong>Code:</strong> <a href="https://github.com/pegahani/Optimization" target="_blank">Optimization</a></p>
+  </section>
+
+  <h2>Software and code</h2>
+  <!-- One line per repository:
+    <li><a href="https://github.com/...">name</a>: one sentence on what it does (paper it accompanies)</li>
+  -->
+  <ul>
+    <li><a href="https://github.com/alignment-decision-lab/shiftlab-llm" target="_blank">SHIFT-Lab</a> (Python): structured distribution shifts and correction modules for LLM-based decision pipelines</li>
+    <li><a href="https://github.com/charlyalizadeh/OPFSDP.jl" target="_blank">OPFSDP.jl</a> (Julia): semidefinite relaxations of optimal power flow with clique decompositions (IJCNN 2022)</li>
+    <li><a href="https://github.com/charlyalizadeh/SDPowerModelsDataset.jl" target="_blank">SDPowerModelsDataset.jl</a> (Julia): dataset of clique decompositions for power networks (IJCNN 2022)</li>
+    <li><a href="https://github.com/charlyalizadeh/MergeDQN" target="_blank">MergeDQN</a> (Python): a DQN agent that learns to merge cliques of a decomposition (IJCNN 2022)</li>
+    <li><a href="https://github.com/rcln/dospordos" target="_blank">dospordos</a> (Python): deep Q-learning for expert finding in search engine results (2024)</li>
+    <li><a href="https://github.com/pegahani/Optimization" target="_blank">Optimization</a> (Python): minimax-regret policies for MDPs with imprecise rewards (AI Communications 2021)</li>
+  </ul>
+
+  <footer>
+    <img src="lyon2-logo-trim.png" alt="Université Lumière Lyon 2">
+    <img src="eric-lab-trim.png" alt="ERIC laboratory">
+    <span>Last updated: October 2026</span>
+  </footer>
+</body>
+</html>
