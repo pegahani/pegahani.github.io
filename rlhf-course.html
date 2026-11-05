@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reinforcement Learning from Human Feedback</title>
+  <meta name="description" content="Reinforcement Learning from Human Feedback: Master 2 MIASHS course by Pegah Alizadeh at Université Lumière Lyon 2.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Pegah Alizadeh</a>
+    <a href="index.html#teaching">Teaching</a>
+  </nav>
+
+  <h1>Reinforcement Learning from Human Feedback</h1>
+  <p class="muted">Master 2 MIASHS · Université Lumière Lyon 2 · 2026–2027</p>
+
+  <p><strong>Course material:</strong>
+    <a href="https://github.com/pegahani/rlhf-course" target="_blank">github.com/pegahani/rlhf-course</a>
+    (slides, labs and homework)</p>
+
+  <h2>Overview</h2>
+  <p>Modern language models are trained to follow instructions and to match human preferences. This course covers how that works, and the statistics behind it: instruction tuning, models of human comparisons, reward models, direct preference optimization, and reinforcement learning for language models. Each session combines a lecture with theory and a hands-on lab, where you train small language models yourself on a free GPU.</p>
+  <p><strong>Format:</strong> 5 sessions of 3 hours, each with a lecture and a lab. Homework at three levels, from foundation to deep, helps you go further. The grade is based on a project of your choice, carried out in teams of 2 or 3.</p>
+
+  <h2>Sessions</h2>
+  <table>
+    <tr><th>#</th><th>Topic</th><th>Hands-on</th></tr>
+    <tr><td>1</td><td>From base models to RLHF: language models, the RLHF objective and its optimal policy, instruction tuning</td><td>Turn a base model into an assistant</td></tr>
+    <tr><td>2</td><td>Preferences and reward models: Bradley-Terry, random utility, identification, maximum likelihood, preference data and its biases</td><td>Label responses, fit a preference model</td></tr>
+    <tr><td>3</td><td>Learning directly from preferences: DPO and its variants, label noise, disagreement between annotators, rejection sampling</td><td>A small DPO run</td></tr>
+    <tr><td>4</td><td>Reinforcement learning for language models: policy gradients, PPO, GRPO, dueling bandits, reasoning models</td><td>Policy gradients for language models, project ideas</td></tr>
+    <tr><td>5</td><td>Over-optimization, AI feedback and open problems</td><td>Project feedback</td></tr>
+  </table>
+
+  <h2>Learning objectives</h2>
+  <ul>
+    <li>Explain the post-training pipeline of language models, and the theory behind each step</li>
+    <li>Model human comparisons with Bradley-Terry and related models, and estimate them with honest uncertainty</li>
+    <li>Derive and implement direct preference optimization, and understand its variants</li>
+    <li>Understand the policy gradient methods used for language models, from REINFORCE to PPO and GRPO</li>
+    <li>Design, run and report a small research project, with baselines and proper statistics</li>
+  </ul>
+
+  <h2>Prerequisites</h2>
+  <p>An introductory course in reinforcement learning, probability and statistics, and Python with NumPy. No previous experience with language models or PyTorch is needed: the first homework bridges from NumPy to PyTorch. Labs run in Google Colab or Kaggle, so a laptop and a Google or Kaggle account are enough.</p>
+
+  <h2>References</h2>
+  <ul>
+    <li>N. Lambert, <em>Reinforcement Learning from Human Feedback</em>, 2026. <a href="https://rlhfbook.com" target="_blank">Free online</a>, with <a href="https://rlhfbook.com/course" target="_blank">lectures and videos</a></li>
+    <li>S. Truong, A. Haupt and S. Koyejo, <em>Machine Learning from Human Preferences</em>, Stanford University, 2025. <a href="https://mlhp.stanford.edu" target="_blank">Free online</a></li>
+    <li>T. Kaufmann, P. Weng, V. Bengs and E. Hüllermeier, "A survey of reinforcement learning from human feedback", <em>Transactions on Machine Learning Research</em>, 2025. <a href="https://arxiv.org/abs/2312.14925" target="_blank">arXiv</a></li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Questions about the course: <a href="mailto:pegah.alizadeh@univ-lyon2.fr">pegah.alizadeh@univ-lyon2.fr</a>. Aligning language models with human preferences is also my research area: students interested in an internship are welcome to <a href="index.html#opportunities">get in touch</a>.</p>
+
+  <footer>
+    <img src="lyon2-logo-trim.png" alt="Université Lumière Lyon 2">
+    <img src="eric-lab-trim.png" alt="ERIC laboratory">
+    <span>Last updated: November 2026</span>
+  </footer>
+</body>
+</html>
