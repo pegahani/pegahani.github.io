@@ -36,12 +36,22 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Navigation: a single line of text links */
+/* Navigation: a single line of text links, kept at the top of the window while scrolling */
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+  padding-top: 12px;
   padding-bottom: 10px;
   margin-bottom: 28px;
   border-bottom: 1px solid var(--rule);
   font-size: 15px;
+}
+
+/* Leave room for the fixed menu when jumping to a section */
+[id] {
+  scroll-margin-top: 64px;
 }
 
 nav a {
@@ -221,6 +231,10 @@ footer span {
   nav a {
     display: inline-block;
     margin-bottom: 4px;
+  }
+
+  [id] {
+    scroll-margin-top: 96px;
   }
 
   table {
