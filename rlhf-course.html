@@ -28,10 +28,10 @@
   <h2>Sessions</h2>
   <table>
     <tr><th>#</th><th>Topic</th><th>Hands-on</th></tr>
-    <tr><td>1</td><td>From base models to RLHF: language models, the RLHF objective and its optimal policy, instruction tuning</td><td>Turn a base model into an assistant</td></tr>
-    <tr><td>2</td><td>Preferences and reward models: Bradley-Terry, random utility, identification, maximum likelihood, preference data and its biases</td><td>Label responses, fit a preference model</td></tr>
-    <tr><td>3</td><td>Learning directly from preferences: DPO and its variants, label noise, disagreement between annotators, rejection sampling</td><td>A small DPO run</td></tr>
-    <tr><td>4</td><td>Reinforcement learning for language models: policy gradients, PPO, GRPO, dueling bandits, reasoning models</td><td>Policy gradients for language models, project ideas</td></tr>
+    <tr><td>1</td><td>From base models to RLHF: language models, tokens and log-probabilities, instruction tuning</td><td>Turn a base model into an assistant</td></tr>
+    <tr><td>2</td><td>Preferences and reward models: Bradley-Terry and where it comes from, reward models for language models (architecture, outcome and process reward models, language models as judges), preference data and its biases</td><td>Train a reward model for a language model</td></tr>
+    <tr><td>3</td><td>Reinforcement learning for language models: the RLHF objective, best-of-N, policy gradients, PPO, GRPO, reasoning models</td><td>Policy gradients for language models</td></tr>
+    <tr><td>4</td><td>Learning directly from preferences: DPO and its variants, label noise, disagreement between annotators, dueling bandits</td><td>A small DPO run, project ideas</td></tr>
     <tr><td>5</td><td>Over-optimization, AI feedback and open problems</td><td>Project feedback</td></tr>
   </table>
 
@@ -39,8 +39,8 @@
   <ul>
     <li>Explain the post-training pipeline of language models, and the theory behind each step</li>
     <li>Model human comparisons with Bradley-Terry and related models, and estimate them with honest uncertainty</li>
-    <li>Derive and implement direct preference optimization, and understand its variants</li>
     <li>Understand the policy gradient methods used for language models, from REINFORCE to PPO and GRPO</li>
+    <li>Derive and implement direct preference optimization, and understand its variants</li>
     <li>Design, run and report a small research project, with baselines and proper statistics</li>
   </ul>
 
